@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.thepolymath.simplymusic">
+    package="in.thepolymath.dehradunhandbook">
 
     <application
         android:allowBackup="true"
@@ -16,18 +16,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlayingActivity"
-            android:label="@string/nowplaying">
-        </activity>
-        <activity android:name=".ExploreActivity"
-            android:label="@string/explore">
-            </activity>
-        <activity android:name=".PlaylistsActivity"
-            android:label="@string/playlists">
-            </activity>
-        <activity android:name=".RadioActivity"
-            android:label="@string/radio">
-        </activity>
+        <activity
+            android:name=".PlacesActivity"
+            android:label="Places"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FoodActivity"
+            android:label="Food"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UtilityActivity"
+            android:label="Utility"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LeisureActivity"
+            android:label="Leisure"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PlacesAdapter"></activity>
     </application>
 
 </manifest>

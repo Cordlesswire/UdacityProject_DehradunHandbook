@@ -8,6 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Style for a category of vocabulary words -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabBackground">?selectableItemBackground</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="android:textColor">#B1EAF1</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
     <style name="ButtonImage">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
@@ -23,7 +48,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">#CED7DB</item>
     </style>
 
     <style name="Buttons">
@@ -33,16 +58,16 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="Playlists" parent="Buttons">
-        <item name="android:background">#009688</item>
+    <style name="Food" parent="Buttons">
+        <item name="android:background">@color/colorPrimary</item>
     </style>
-    <style name="Radio" parent="Buttons">
-        <item name="android:background">#4DB6AC</item>
+    <style name="Utility" parent="Buttons">
+        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
-    <style name="NowPlaying" parent="Buttons">
-        <item name="android:background">#4DB6AC</item>
+    <style name="Places" parent="Buttons">
+        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
-    <style name="Explore" parent="Buttons">
-        <item name="android:background">#009688</item>
+    <style name="Leisure" parent="Buttons">
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 </resources>

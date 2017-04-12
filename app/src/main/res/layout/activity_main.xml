@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="in.thepolymath.simplymusic.MainActivity">
+    tools:context="in.thepolymath.dehradunhandbook.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,37 +14,56 @@
         android:baselineAligned="false"
         android:orientation="horizontal">
 
-        <RelativeLayout style="@style/NowPlaying"
-            android:id="@+id/nowPlaying">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
 
-            <ImageView
-                android:id="@+id/nowPlayingIcon"
-                style="@style/ButtonImage"
-                android:src="@drawable/nowplayingicon" />
+            <RelativeLayout
+                android:id="@+id/places"
+                style="@style/Buttons"
+                android:background="?selectableItemBackground">
 
-            <TextView
-                style="@style/ButtonText"
-                android:id="@+id/nowPlayingText"
-                android:layout_alignBottom="@+id/nowPlayingIcon"
-                android:layout_alignParentBottom="true"
-                android:text="@string/nowplaying" />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/placesIcon"
+                    style="@style/ButtonImage"
+                    android:src="@drawable/ic_place_white_48dp" />
 
-        <RelativeLayout style="@style/Playlists"
-            android:id="@+id/playlist">
+                <TextView
+                    android:id="@+id/nowPlayingText"
+                    style="@style/ButtonText"
+                    android:layout_alignBottom="@id/placesIcon"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/places" />
+            </RelativeLayout>
+        </LinearLayout>
 
-            <ImageView
-                android:id="@+id/playlistIcon"
-                style="@style/ButtonImage"
-                android:src="@drawable/playlistsicon" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
 
-            <TextView
-                style="@style/ButtonText"
-                android:id="@+id/playlistText"
-                android:layout_alignBottom="@+id/playlistIcon"
-                android:layout_alignParentBottom="true"
-                android:text="@string/playlists" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/food"
+                style="@style/Buttons"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/foodIcon"
+                    style="@style/ButtonImage"
+                    android:src="@drawable/ic_restaurant_white_48dp" />
+
+                <TextView
+                    android:id="@+id/playlistText"
+                    style="@style/ButtonText"
+                    android:layout_alignBottom="@id/foodIcon"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/food" />
+            </RelativeLayout>
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -54,36 +73,54 @@
         android:baselineAligned="false"
         android:orientation="horizontal">
 
-        <RelativeLayout style="@style/Explore"
-            android:id="@+id/explore">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
 
-            <ImageView
-                android:id="@+id/exploreIcon"
-                style="@style/ButtonImage"
-                android:src="@drawable/exploreicon" />
+            <RelativeLayout
+                android:id="@+id/leisure"
+                style="@style/Buttons"
+                android:background="?selectableItemBackground">
 
-            <TextView
-                style="@style/ButtonText"
-                android:id="@+id/exploreText"
-                android:layout_alignBottom="@+id/exploreIcon"
-                android:layout_alignParentBottom="true"
-                android:text="@string/explore" />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/leisureIcon"
+                    style="@style/ButtonImage"
+                    android:src="@drawable/ic_stars_white_48dp" />
 
-        <RelativeLayout style="@style/Radio"
-            android:id="@+id/radio">
+                <TextView
+                    android:id="@+id/exploreText"
+                    style="@style/ButtonText"
+                    android:layout_alignBottom="@id/leisureIcon"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/leisure" />
+            </RelativeLayout>
+            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/radioIcon"
-                style="@style/ButtonImage"
-                android:src="@drawable/radioicon" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark">
 
-            <TextView
-                style="@style/ButtonText"
-                android:id="@+id/radioText"
-                android:layout_alignBottom="@+id/radioIcon"
-                android:layout_alignParentBottom="true"
-                android:text="@string/radio" />
-        </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/utility"
+                    style="@style/Buttons"
+                    android:background="?selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/utilityIcon"
+                        style="@style/ButtonImage"
+                        android:src="@drawable/ic_info_outline_white_48dp" />
+
+                    <TextView
+                        android:id="@+id/radioText"
+                        style="@style/ButtonText"
+                        android:layout_alignBottom="@id/utilityIcon"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/utility" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
